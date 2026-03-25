@@ -48,6 +48,15 @@
 
 /* --- Theme Overrides --- */
 
+/* Mobile nav: reset transparent-dark overrides so links are readable on white bg */
+.nav--transparent-dark .nav__mobile .nav__link {
+  color: var(--color-text);
+}
+.nav--transparent-dark .nav__mobile .nav__link:hover,
+.nav--transparent-dark .nav__mobile .nav__link--active {
+  color: var(--color-primary);
+}
+
 /* Contact page heading cap */
 .contact-info h2,
 .contact-form-wrap .card h2 {
