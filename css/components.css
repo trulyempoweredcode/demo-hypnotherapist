@@ -4969,7 +4969,7 @@ a.card--service:hover .card__link {
   padding: var(--space-lg) 0;
   text-align: left;
   font-family: var(--font-heading);
-  font-size: calc(var(--text-h3-desktop) * 0.85);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-heading);
   cursor: pointer;
@@ -5004,7 +5004,7 @@ a.card--service:hover .card__link {
 }
 
 .accordion__content p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--color-text-light);
   line-height: var(--line-height-relaxed);
 }
