@@ -2920,14 +2920,14 @@ a.card--service:hover .card__link {
 
 .faq-item__question {
   font-family: var(--font-heading);
-  font-size: var(--text-lg);
+  font-size: calc(var(--text-h3-desktop) * 0.8);
   font-weight: var(--font-weight-semibold);
   color: var(--color-text-heading);
   margin-bottom: var(--space-sm);
 }
 
 .faq-item__answer {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--color-text-light);
   line-height: var(--line-height-relaxed);
 }
@@ -2954,7 +2954,7 @@ a.card--service:hover .card__link {
 
 .privacy-content h2 {
   font-size: var(--text-xl);
-  margin-top: 96px;
+  margin-top: var(--space-2xl);
   margin-bottom: var(--space-md);
 }
 
@@ -3031,6 +3031,10 @@ a.card--service:hover .card__link {
 
 .page-header--dark p {
   color: rgba(255, 255, 255, 0.85);
+}
+
+.page-header--dark .section-label {
+  color: var(--color-secondary-light);
 }
 
 .page-header--dark .breadcrumb__link {
@@ -3380,6 +3384,53 @@ a.card--service:hover .card__link {
 
 .text-block .btn {
   margin-top: var(--space-lg);
+}
+
+/* =============================================
+   CONTENT: STORY SPLIT
+   Centered heading above, then h3 lead on the left
+   with body paragraphs on the right.
+   ============================================= */
+.story-split {
+  max-width: var(--container-wide);
+  margin: 0 auto;
+}
+
+.story-split .text-center {
+  margin-bottom: var(--space-2xl);
+}
+
+.story-split__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.story-split__lead {
+  line-height: var(--line-height-tight);
+  color: var(--color-text-heading);
+}
+
+.story-split__lead h3 {
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+.story-split__content p {
+  color: var(--color-text-light);
+  line-height: var(--line-height-relaxed);
+}
+
+.story-split__content p + p {
+  margin-top: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .story-split__body {
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--space-2xl);
+  }
 }
 
 /* =============================================
@@ -6015,7 +6066,7 @@ a.card--service:hover .card__link {
 
 .blog-post__body h2 {
   font-size: var(--text-xl);
-  margin-top: 96px;
+  margin-top: var(--space-2xl);
   margin-bottom: var(--space-md);
 }
 
@@ -6085,7 +6136,7 @@ a.card--service:hover .card__link {
   align-items: center;
   gap: var(--space-md);
   padding-top: var(--space-2xl);
-  margin-top: 96px;
+  margin-top: var(--space-2xl);
   border-top: 1px solid var(--color-border-light);
 }
 
